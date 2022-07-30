@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Megrim&family=Poiret+One&display=swap');
+
+* {
+    font-family: 'Megrim', cursive;
+    text-align: center;
+    background-color: black;
+    color: #06b3ca;
+}
+
+h1 {
+    font-size: 7.5rem;
+    margin: 50px auto 40px;
+}
+
+p{
+    font-family: 'Poiret One', cursive;
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+marquee {
+    font-family: 'Poiret One', cursive;
+    font-size: 4rem;
+    background-color: #2fc1d4;
+    color: black;
+    padding: 25px;
+    margin-top: 25px;
+}
+
+.left {
+    float: left;
+    width: 45%;
+}
+
+.right {
+    float: right;
+    width: 45%;
+
+}
+
+#games {
+    margin-top: 1%;
+    margin-right: -.4%;
+    margin-left: -.4%;
+    margin-bottom: -3%;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 3%;
+    overflow: auto;
+    }
+
+.game-img{
+    width: 50%;
+    opacity: 1;
+    display: center;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+
+.container:hover .game-img,.play {
+    opacity: 0.3;
+  }
+  

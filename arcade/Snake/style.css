@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Megrim&family=Poiret+One&display=swap');
+
+* {
+    font-family: 'Megrim', cursive;
+    color: #06b3ca;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    margin-bottom: 2%;
+}
+
+main {
+    display: grid;
+    grid-template: repeat(12, 1fr) / repeat(12, 1fr);
+    width: 40rem;
+    height: 40rem;
+    background-color: #06b3ca;
+}
+
+h1 {
+    font-size: 70px;
+    color: #06b3ca;
+    margin: 35px auto 40px;
+}
+
+#play {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+}
+
+#prompt {
+    margin: -10px 0px auto -82px;
+    font-size: 40px;
+    text-align: center;
+}
+
+#scoreBoard, h2{
+    font-family: 'Poiret One', cursive;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.start-game {
+    font-family: 'Poiret One', cursive;
+    position: absolute;
+    margin: 6px 0px 0px 10px;
+    background-color: black;
+    width: 6rem;
+    height: 2.5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 25px;
+    padding-bottom: 3px;
+}
+
+.start-game:hover {
+    background-color: #06b3ca;
+    color: white;
+}
+
+
+#board {
+    width: 40rem;
+    height: 40rem;
+    font-weight: 600;
+}
+
+.cell {
+    border: 0.5px solid #2fc1d4;
+
+}
+
+.cell.apple {
+    background-image: url("./links/apple.png");
+}
+
+.cell.snake {
+    background-color: rgb(153, 226, 110);
+}
+
+
+#controls {
+    display: none;
+    grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+    align-items: center;
+    align-self: center;
+}
+
+button.up {
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+button.down {
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+
+button.right {
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+
+button.left {
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+button.up,
+button.down,
+button.right,
+button.left {
+    background-color: #2fc1d4;
+    margin-right: 30px;
+    width: 6rem;
+    height: 4.5rem;
+    border: 3px solid #06b3ca;
+    color: white;
+    font-size: 1.35rem;
+    font-weight: 600;
+    padding-top: 2px;
+    border-radius: 12px;
+}
+
+#return {
+    margin-top: 20%;
+}
+
+a:link {
+    text-decoration: none;
+}
